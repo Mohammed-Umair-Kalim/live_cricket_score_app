@@ -1,0 +1,8 @@
+{% macro render_match(match) %}
+<div class="match">
+  <a href="{{ match.link }}" target="_blank">
+    <h5>{{ match.title }}</h5>
+    <p>{{ match.description }}</p>
+  </a>
+</div>
+{% endmacro %}

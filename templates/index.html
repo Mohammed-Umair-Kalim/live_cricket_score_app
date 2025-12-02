@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% from "macros.html" import render_match %}
+
+{% block content %}
+<div id="match-list">
+  {% for match in matches %}
+    {{ render_match(match) }}
+  {% endfor %}
+</div>
+{% endblock %}
+
