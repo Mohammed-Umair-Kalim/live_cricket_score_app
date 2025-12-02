@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Live Cricket Scores</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4 mb-4">Live Cricket Scores</h1>
+      <div class="list-group">
+        {% for match in matches %}
+          <a href="{{ match.link }}" class="list-group-item list-group-item-action">
+            <h5 class="mb-1">{{ match.title }}</h5>
+            <p class="mb-1">{{ match.description }}</p>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
